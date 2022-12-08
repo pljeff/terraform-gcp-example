@@ -1,7 +1,6 @@
 resource "google_compute_instance" "default" {
   name         = "web1"
   machine_type = "f1-micro"
-  zone         = var.zone
   tags         = ["ssh","https"]
 
   boot_disk {
